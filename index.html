@@ -72,7 +72,7 @@ h1 .g2 { background: linear-gradient(90deg, var(--green), #17a57f); -webkit-back
 
 .portrait { position: relative; justify-self: end; width: min(360px, 100%); }
 .portrait-frame { border-radius: 28px; overflow: hidden; background: #fff; padding: 10px; box-shadow: var(--shadow); border: 1px solid var(--line); }
-.portrait-frame img { border-radius: 20px; width: 100%; aspect-ratio: 4 / 4.6; object-fit: cover; object-position: center 18%; }
+.portrait-frame img { border-radius: 20px; width: 100%; aspect-ratio: 1 / 1; height: auto; object-fit: cover; object-position: center 25%; }
 .chip { position: absolute; background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 10px 14px; box-shadow: var(--shadow); font-size: 13px; line-height: 1.3; color: var(--muted); }
 .chip strong { display: block; color: var(--ink); font-size: 17px; font-weight: 700; letter-spacing: -.01em; }
 .chip-a { left: -44px; top: 36px; }
@@ -150,8 +150,7 @@ footer a:hover { color: var(--ink); }
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; gap: 44px; padding: 28px 0 56px; }
   .portrait { justify-self: center; width: min(320px, 82%); }
-  .portrait-frame img { aspect-ratio: 4 / 3.4; max-height: 340px; }
-  .chip-a { left: -22px; } .chip-b { right: -18px; }
+  .chip-a { left: -22px; top: -20px; } .chip-b { right: -18px; bottom: -20px; }
   .work, .about, .contact { grid-template-columns: 1fr; }
   .section-head { flex-direction: column; align-items: start; }
   .contact { padding: 36px 26px; border-radius: 26px; }
@@ -194,7 +193,7 @@ footer a:hover { color: var(--ink); }
       </div>
     </div>
     <div class="portrait">
-      <div class="portrait-frame"><img src="paula.jpg" alt="Portrait of Paula Mikki Tindoc" width="560" height="720"></div>
+      <div class="portrait-frame"><img src="paula.webp" alt="Paula Mikki Tindoc in her graduation gown" width="440" height="440"></div>
       <div class="chip chip-a"><strong><span class="up">#17 → #1</span></strong>Thai gold-trading keyword</div>
       <div class="chip chip-b"><strong>9A* · 3A*</strong>IGCSE · A Level</div>
     </div>
